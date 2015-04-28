@@ -1,0 +1,60 @@
+/*****************************************************************************
+  jennyleung
+******************************************************************************/
+$visual-grid: true;
+$visual-grid-color: tomato;
+
+
+@import '../../bower_components/bourbon/dist/_bourbon.scss';
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+
+
+
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+
+
+$font-stack: "Avenir", Helvetica, Arial, sans-serif;
+$font-header: "Georgia", serif;
+$primary-color: #333;
+$unit: 16px;
+
+body {
+    font-family: $font-stack;
+    line-height: 1.4;
+    font-size: $unit*1.4;
+}
+
+h1 {
+    font-family: $font-header;
+    font-style: italic;
+    font-size: $unit*2.4;
+}
+
+//set max width
+main, footer {
+    @include outer-container;
+}
+
+section {
+
+}
+
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+
+
+
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+
+
+
+
