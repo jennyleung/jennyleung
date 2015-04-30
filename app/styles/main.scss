@@ -8,7 +8,8 @@ $visual-grid-color: tomato;
 @import '../../bower_components/bourbon/dist/_bourbon.scss';
 @import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
 
-
+$small: new-breakpoint(min-width 680px max-width 949px);
+$small-up: new breakpoint (min-width 680px);
 
 
 
@@ -49,12 +50,29 @@ section {
 ******************************************************************************/
 
 
+//set max width
+main, footer {
+    @include outer-container
+}
+
+.list-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: block;
+}
 
 
 /*****************************************************************************
   Module Styles
 ******************************************************************************/
 
-
+.site-menu {
+    position: fixed;
+    
+    background-color: #acacac;
+    
+    
+}
 
 
