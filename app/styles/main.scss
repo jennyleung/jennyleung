@@ -1,7 +1,7 @@
 /*****************************************************************************
   jennyleung
 ******************************************************************************/
-$visual-grid: true;
+$visual-grid: false;
 $visual-grid-color: tomato;
 
 
@@ -9,9 +9,9 @@ $visual-grid-color: tomato;
 @import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
 
 $small: new-breakpoint(min-width 560px max-width 949px);
-$smallup: new-breakpoint (min-width 560px);
-$medium: new-breakpoint(min-width 949px max-width 1200px);
-$medium-up: new-breakpoint (min-width 949px);
+$small-up: new-breakpoint (min-width 560px);
+$medium: new-breakpoint(min-width 950px max-width 1200px);
+$mediumup: new-breakpoint (min-width 950px);
 $large-up: new-breakpoint(min-width 1200px);
 
 
@@ -120,7 +120,7 @@ header, main, footer, section, .case-container {
     float: left;
     line-height: $unit*3;
     margin: 0 20px 0 20px;
-    color: $orange;
+    color: $grey;
 }
 
 .site-menu {
@@ -191,7 +191,7 @@ header, main, footer, section, .case-container {
         @include omega(2n);
     }
     
-    @include media($medium-up) {
+    @include media($medium) {
         @include span-columns(3);
         @include omega(4n);
     }
@@ -211,7 +211,7 @@ header, main, footer, section, .case-container {
     
     @include span-columns(12);
     
-    @include media($smallup){
+    @include media($small){
         @include span-columns(9);
     }
 }
@@ -220,7 +220,15 @@ header, main, footer, section, .case-container {
     
     @include span-columns(12);
     
-    @include media($smallup) {
+    @include media($small) {
         @include span-columns(3);
     }
+}
+
+
+// Footer
+.site-footer {
+    border-top: 1px solid $grey;
+    bottom: 0px;
+    height:auto;
 }
