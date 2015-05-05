@@ -8,8 +8,11 @@ $visual-grid-color: tomato;
 @import '../../bower_components/bourbon/dist/_bourbon.scss';
 @import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
 
-$small: new-breakpoint(min-width 680px max-width 949px);
-$small-up: new breakpoint (min-width 680px);
+$small: new-breakpoint(min-width 560px max-width 949px);
+$smallup: new-breakpoint (min-width 560px);
+$medium: new-breakpoint(min-width 949px max-width 1200px);
+$medium-up: new-breakpoint (min-width 949px);
+$large-up: new-breakpoint(min-width 1200px);
 
 
 
@@ -20,13 +23,20 @@ $small-up: new breakpoint (min-width 680px);
 
 $font-stack: "Avenir", Helvetica, Arial, sans-serif;
 $font-header: "Georgia", serif;
-$primary-color: #333;
 $unit: 16px;
+
+//colors
+$orange: #eac31f;
+$light-grey: #bababa;
+$grey: #454545;
+$dark-grey: #333;
+
 
 body {
     font-family: $font-stack;
     line-height: 1.4;
     font-size: $unit*1.4;
+    color: $dark-grey;
 }
 
 h1 {
@@ -35,14 +45,34 @@ h1 {
     font-size: $unit*2.4;
 }
 
+main {
+    padding: 0 2.5%;
+}
+
+a:link {
+    color: $grey;
+    text-decoration: none;
+}
+
+a:visited {
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+}
+
+
+
 //set max width
 main, footer {
     @include outer-container;
 }
 
-section {
 
-}
 
 
 /*****************************************************************************
@@ -51,7 +81,7 @@ section {
 
 
 //set max width
-main, footer {
+header, main, footer, section, .case-container {
     @include outer-container
 }
 
@@ -59,20 +89,138 @@ main, footer {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: block;
 }
+
+.list-unstyled > li {
+    text-decoration: none;
+}
+
+
+
+
+
 
 
 /*****************************************************************************
   Module Styles
 ******************************************************************************/
 
-.site-menu {
-    position: fixed;
-    
-    background-color: #acacac;
-    
+// Nav
+
+.site-header {
+    background-color: #fff;
+    border-bottom: 1px solid $light-grey;
     
 }
 
+.logo {
+    font-family: Georgia, Serif;
+    font-size: $unit*1.8;
+    font-weight: bold;
+    float: left;
+    line-height: $unit*3;
+    margin: 0 20px 0 20px;
+    color: $orange;
+}
 
+.site-menu {
+    float: right;
+    line-height: $unit*1.8;
+    vertical-align: middle;
+
+}
+
+.menu {
+    line-height: $unit*3;
+    font-size: $unit;
+    
+    float: left;
+    margin-right: $unit;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-left: $unit;
+    text-decoration: none;
+    line-height: $unit*3;
+}
+
+
+// Page header
+
+
+.page-header {
+    margin-top: $unit*3;
+    margin-bottom: $unit*4;
+}
+
+.page-header-title {
+    text-align: center;
+    display: block;
+}
+
+.page-header-desc {
+    text-align: center;
+}
+
+.photo {
+    height: 300px;
+    width: 200px;
+    background-color: #1f88b7;
+}
+
+//Procrastiwork
+
+.case-container{
+    background-color: #3a82e3;
+    overflow: auto;
+}
+
+.case-study{
+    background-color: #d3d0d0;
+    height: $unit*10;
+    border: 1px solid black;
+    margin-bottom: $unit*2;
+    overflow: auto;
+    @include row;
+    
+    @include omega;
+    
+    @include media($small) {
+        @include span-columns(6);
+        @include omega(2n);
+    }
+    
+    @include media($medium-up) {
+        @include span-columns(3);
+        @include omega(4n);
+    }
+}
+
+
+//Case-study
+
+.photo-placeholder {
+    height: 450px;
+    background-color: $light-grey;
+    margin: auto;
+    border: 1px solid $dark-grey;
+}
+
+.content-left {
+    
+    @include span-columns(12);
+    
+    @include media($smallup){
+        @include span-columns(9);
+    }
+}
+
+.content-right {
+    
+    @include span-columns(12);
+    
+    @include media($smallup) {
+        @include span-columns(3);
+    }
+}
