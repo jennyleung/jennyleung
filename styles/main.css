@@ -1,0 +1,202 @@
+/*****************************************************************************
+  jennyleung
+******************************************************************************/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+body {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 22.4px;
+  color: #333; }
+
+h1 {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 38.4px; }
+
+main {
+  padding: 0 2.5%; }
+
+a:link {
+  color: #454545;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+main, footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  main:after, footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+header, main, footer, section, .case-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  header:after, main:after, footer:after, section:after, .case-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.list-unstyled > li {
+  text-decoration: none; }
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+.site-header {
+  background-color: #fff;
+  border-bottom: 1px solid #bababa; }
+
+.logo {
+  font-family: Georgia, Serif;
+  font-size: 28.8px;
+  font-weight: bold;
+  float: left;
+  line-height: 48px;
+  margin: 0 20px 0 20px;
+  color: #454545; }
+
+.site-menu {
+  float: right;
+  line-height: 28.8px;
+  vertical-align: middle; }
+
+.menu {
+  line-height: 48px;
+  font-size: 16px;
+  float: left;
+  margin-right: 16px; }
+
+.menu > li {
+  display: inline-block;
+  margin-left: 16px;
+  text-decoration: none;
+  line-height: 48px; }
+
+.page-header {
+  margin-top: 48px;
+  margin-bottom: 64px; }
+
+.page-header-title {
+  text-align: center;
+  display: block; }
+
+.page-header-desc {
+  text-align: center; }
+
+.photo {
+  height: 300px;
+  width: 200px;
+  background-color: #1f88b7; }
+
+.case-container {
+  background-color: #3a82e3;
+  overflow: auto; }
+
+.case-study {
+  background-color: #d3d0d0;
+  height: 160px;
+  border: 1px solid black;
+  margin-bottom: 32px;
+  overflow: auto;
+  display: block;
+  margin-right: 0; }
+  .case-study:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 560px) and (max-width: 949px)  {
+    .case-study {
+      float: left;
+      display: block;
+      margin-right: 2.1276595745%;
+      width: 48.9361702128%; }
+      .case-study:last-child {
+        margin-right: 0; }
+      .case-study:nth-child(2n) {
+        margin-right: 0; }
+      .case-study:nth-child(2n+1) {
+        clear: left; } }
+  @media screen and (min-width: 950px) and (max-width: 1200px)  {
+    .case-study {
+      float: left;
+      display: block;
+      margin-right: 2.1276595745%;
+      width: 23.4042553191%; }
+      .case-study:last-child {
+        margin-right: 0; }
+      .case-study:nth-child(4n) {
+        margin-right: 0; }
+      .case-study:nth-child(4n+1) {
+        clear: left; } }
+
+.photo-placeholder {
+  float: left;
+  display: block;
+  margin-right: 2.1276595745%;
+  width: 100%;
+  background-color: #bababa;
+  margin: auto;
+  border: 1px solid #333; }
+  .photo-placeholder:last-child {
+    margin-right: 0; }
+
+img {
+  width: 100%; }
+
+.content-left {
+  float: left;
+  display: block;
+  margin-right: 2.1276595745%;
+  width: 100%; }
+  .content-left:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 560px) and (max-width: 949px)  {
+    .content-left {
+      float: left;
+      display: block;
+      margin-right: 2.1276595745%;
+      width: 74.4680851064%; }
+      .content-left:last-child {
+        margin-right: 0; } }
+
+.content-right {
+  float: left;
+  display: block;
+  margin-right: 2.1276595745%;
+  width: 100%; }
+  .content-right:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 560px) and (max-width: 949px)  {
+    .content-right {
+      float: left;
+      display: block;
+      margin-right: 2.1276595745%;
+      width: 23.4042553191%; }
+      .content-right:last-child {
+        margin-right: 0; } }
+
+.site-footer {
+  border-top: 1px solid #454545;
+  bottom: 0px;
+  height: auto; }
