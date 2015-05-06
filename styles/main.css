@@ -137,7 +137,7 @@ header, main, footer, section, .case-container {
         margin-right: 0; }
       .case-study:nth-child(2n+1) {
         clear: left; } }
-  @media screen and (min-width: 950px) and (max-width: 1200px)  {
+  @media screen and (min-width: 950px)  {
     .case-study {
       float: left;
       display: block;
