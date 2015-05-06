@@ -201,10 +201,14 @@ header, main, footer, section, .case-container {
 //Case-study
 
 .photo-placeholder {
-    height: 450px;
+    @include span-columns(12);
     background-color: $light-grey;
     margin: auto;
     border: 1px solid $dark-grey;
+}
+
+img {
+    @include fill-parent;
 }
 
 .content-left {
