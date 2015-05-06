@@ -32,12 +32,18 @@ $grey: #454545;
 $dark-grey: #333;
 
 
+
 body {
     font-family: $font-stack;
     line-height: 1.4;
     font-size: $unit*1.4;
     color: $dark-grey;
+    
+    background-image: url("images/_DSC0375.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 h1 {
     font-family: $font-header;
@@ -196,7 +202,10 @@ header, main, footer, section, .case-container {
         @include omega(4n);
     }
 }
-
+.desc {
+    @include span-columns(6);
+    @include shift(3);
+}
 
 //Case-study
 
