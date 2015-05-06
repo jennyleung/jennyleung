@@ -14,7 +14,10 @@ body {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   line-height: 1.4;
   font-size: 22.4px;
-  color: #333; }
+  color: #333;
+  background-image: url("images/_DSC0375.JPG");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 h1 {
   font-family: "Georgia", serif;
@@ -149,6 +152,15 @@ header, main, footer, section, .case-container {
         margin-right: 0; }
       .case-study:nth-child(4n+1) {
         clear: left; } }
+
+.desc {
+  float: left;
+  display: block;
+  margin-right: 2.1276595745%;
+  width: 48.9361702128%;
+  margin-left: 25.5319148936%; }
+  .desc:last-child {
+    margin-right: 0; }
 
 .photo-placeholder {
   float: left;
