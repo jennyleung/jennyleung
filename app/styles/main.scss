@@ -11,7 +11,7 @@ $visual-grid-color: tomato;
 $small: new-breakpoint(min-width 560px max-width 949px);
 $small-up: new-breakpoint (min-width 560px);
 $medium: new-breakpoint(min-width 950px max-width 1200px);
-$mediumup: new-breakpoint (min-width 950px);
+$medium-up: min-width 950px;
 $large-up: new-breakpoint(min-width 1200px);
 
 
@@ -191,7 +191,7 @@ header, main, footer, section, .case-container {
         @include omega(2n);
     }
     
-    @include media($medium) {
+    @include media($medium-up) {
         @include span-columns(3);
         @include omega(4n);
     }
