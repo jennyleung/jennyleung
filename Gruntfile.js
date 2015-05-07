@@ -230,7 +230,7 @@ module.exports = function (grunt) {
           },
           pages: {
             options: {
-              remote: 'https://github.com/fightingtheboss/jennyleung.git',
+              remote: 'https://github.com/jennyleung/jennyleung.git',
               branch: 'gh-pages'
             }
           },
