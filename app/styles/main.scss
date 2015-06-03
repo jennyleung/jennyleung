@@ -38,8 +38,8 @@ body {
     line-height: 1.4;
     font-size: $unit*1.4;
     color: $dark-grey;
-    
-    background-image: url("images/_DSC0375.JPG");
+
+    background-image: url("../images/landscape.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -116,7 +116,7 @@ header, main, footer, section, .case-container {
 .site-header {
     background-color: #fff;
     border-bottom: 1px solid $light-grey;
-    
+
 }
 
 .logo {
@@ -139,7 +139,7 @@ header, main, footer, section, .case-container {
 .menu {
     line-height: $unit*3;
     font-size: $unit;
-    
+
     float: left;
     margin-right: $unit;
 }
@@ -189,14 +189,14 @@ header, main, footer, section, .case-container {
     margin-bottom: $unit*2;
     overflow: auto;
     @include row;
-    
+
     @include omega;
-    
+
     @include media($small) {
         @include span-columns(6);
         @include omega(2n);
     }
-    
+
     @include media($medium-up) {
         @include span-columns(3);
         @include omega(4n);
@@ -221,18 +221,18 @@ img {
 }
 
 .content-left {
-    
+
     @include span-columns(12);
-    
+
     @include media($small){
         @include span-columns(9);
     }
 }
 
 .content-right {
-    
+
     @include span-columns(12);
-    
+
     @include media($small) {
         @include span-columns(3);
     }

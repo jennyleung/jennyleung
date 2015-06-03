@@ -242,7 +242,7 @@ module.exports = function (grunt) {
           }
         },
 
-        // 
+        //
 
         // Run some tasks in parallel to speed up build process
         concurrent: {
@@ -300,7 +300,7 @@ module.exports = function (grunt) {
         'concurrent:dist',
         'autoprefixer',
         'copy:dist',
-        'useminPrepare', // 
+        'useminPrepare', //
         'concat',
         'cssmin',
         'uglify',
